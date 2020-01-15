@@ -1,0 +1,18 @@
+<p>products works!</p>
+
+    <div class="grd-row-col-4">
+      <div class="cats_container">
+        <div class="media" *ngFor="let product of products">
+          <div class="media-figure">
+            <img [src]="product.data.url">
+          </div>
+          <div class="media-body">
+            <p>{{product.data.nombre}}</p>
+            <div class="btn--group">
+              <button class="btn--green btn--s btn1">Editar</button>
+              <button class="btn--red btn--s btn2">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
