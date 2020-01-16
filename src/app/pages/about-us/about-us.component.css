@@ -1,0 +1,39 @@
+@import url('../../app.css');
+
+.texto {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+/* =============== TEXTO =============== */
+.container {
+    margin: 2% auto;
+}
+
+.container > h1 {
+    font-family: 'Mogra', sans-serif;
+    color: var(--pink);
+    background-image:  var(--rainbow);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 4px;
+}
+
+/* =============== CARDS =============== */
+.contact-card {
+    border-color: gray;
+    box-shadow: -1px 12px 17px -7px rgba(0,0,0,0.75);
+}
+
+.contact-card-body > h5 {
+    font-family: 'Mogra', sans-serif;
+    color: var(--pink);
+    text-align: center;
+}
+
+.contact-card-body > p {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+}
