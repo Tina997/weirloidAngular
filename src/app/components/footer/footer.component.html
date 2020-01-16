@@ -1,0 +1,48 @@
+<footer class="footer">
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <div class="col footer-text ">
+                <p>Copyright © 2019 Weirloid. All rights reserved.</p>
+            </div>
+
+            <div class="col-1 footer-brand">
+                <img class="footer-logo" src="{{asset('img/logo.png')}}"></div>
+
+            <div class="col">
+
+                <ul class="nav icon-nav navbar-expand-md">
+                    <li class="nav-item ">
+                        <a class="nav-link footer-icon-nav-link">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-icon-nav-link">
+                            <i class="fab fa-facebook-square fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-icon-nav-link">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </li>
+                    <hr class="vertical-separator">
+                    <li class="nav-item">
+                        <a class="nav-link footer-icon-nav-link">
+                            <i class="fab fa-android fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-icon-nav-link">
+                            <i class="fab fa-apple fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</footer>

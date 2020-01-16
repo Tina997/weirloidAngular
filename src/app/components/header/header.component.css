@@ -1,0 +1,77 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
+
+/*=============== IMPORT FONTS ===============*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Mogra);
+
+/*=============== IMPORT ICONS ===============*/
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+
+/* =============== COLORS =============== */
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --ivory: #F5F1F1;
+    --light-gray: #C4C4C4;
+    --transBlack: rgba(0, 0, 0, 0.65);
+
+    --pink: #EC008C;
+    --red: #ED1C24;
+    --orange: #F99D1C;
+    --blue: #008FD5;
+    --purple: #802A90;
+    --rainbow: linear-gradient(90deg,#EC008C, #ED1C24, #F99D1C, #008FD5, #802A90);
+}
+
+/* =============== HEADER =============== */
+.header {
+    background-color: var(--ivory);
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.header-logo {
+    max-width: 70px;
+    display: block;
+    margin: 0;
+}
+
+.fas.fa-bars{
+    font-size: 140%;
+    color: var(--pink);
+    margin: 10%;
+}
+
+.cel {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mynavbar .navbar-nav .nav-link{
+    color: var(--pink);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+    text-transform: uppercase;
+    border-radius: 30%;
+}
+
+.mynavbar .navbar-nav .nav-link:hover{
+    color: var(--black);
+}
+
+.mynavbar .navbar-nav .active>.nav-link, .mynavbar .navbar-nav .nav-link.active, .mynavbar .navbar-nav .nav-link.show, .mynavbar .navbar-nav .show>.nav-link {
+    color: var(--white);
+    font-weight: bolder;
+    background-image: var(--rainbow);
+}
+a.rainbowCircle {
+    color: var(--white);
+    background: var(--rainbow);
+    border-radius: 360px;
+    margin-left: 2px;
+    width: 50px;
+}

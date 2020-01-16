@@ -1,0 +1,78 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
+
+/*=============== IMPORT FONTS ===============*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Mogra);
+
+/*=============== IMPORT ICONS ===============*/
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+
+/* =============== COLORS =============== */
+::ng-deep :root{
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --ivory: #F5F1F1;
+    --light-gray: #C4C4C4;
+    --transBlack: rgba(0, 0, 0, 0.65);
+
+    --pink: #EC008C;
+    --red: #ED1C24;
+    --orange: #F99D1C;
+    --blue: #008FD5;
+    --purple: #802A90;
+    --rainbow: linear-gradient(90deg,#EC008C, #ED1C24, #F99D1C, #008FD5, #802A90);
+}
+
+/* =============== FOOTER =============== */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid var(--light-gray);
+    background-color: var(--ivory);
+}
+
+/* -------- Text -------- */
+.footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75%;
+    text-align: left;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+/* -------- Logo -------- */
+.footer-logo {
+    width: 40px;
+    display: block;
+    margin:auto;
+}
+
+/* -------- Social Icons -------- */
+.icon-nav{
+    float: right;
+    font-size: 90%;
+}
+
+.footer-icon-nav-link {
+    display: block;
+    padding-top: 25%;
+}
+
+.footer-icon-nav-link i {
+    color: var(--pink);
+}
+
+.footer-icon-nav-link i:hover {
+    color: var(--black);
+}
+
+.vertical-separator{
+    border:         none;
+    border-left:    3px solid var(--white);
+    height:         15px;
+    width:          1px;
+}
