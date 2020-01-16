@@ -1,0 +1,32 @@
+@import url('../../app.css');
+
+/* =============== CARDS =============== */
+.service-card {
+    border: 2px dotted var(--pink);
+    border-color: var(--pink);
+    box-shadow: -1px 12px 17px -7px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 500%;
+    text-align: center;
+    margin-top: 15%;
+    background: -webkit-linear-gradient(left, var(--pink),var(--red),var(--orange),var(--blue),var(--purple));
+    background-size: 35% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-card-body > h5 {
+    font-family: 'Mogra', sans-serif;
+    text-align: center;
+    color: var(--pink);
+}
+
+.service-card-body > p {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
