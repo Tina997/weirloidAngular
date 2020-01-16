@@ -1,28 +1,4 @@
-@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);
-
-/*=============== IMPORT FONTS ===============*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Mogra);
-
-/*=============== IMPORT ICONS ===============*/
-@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
-
-/* =============== COLORS =============== */
-::ng-deep :root{
-    --white: #FFFFFF;
-    --black: #000000;
-
-    --ivory: #F5F1F1;
-    --light-gray: #C4C4C4;
-    --transBlack: rgba(0, 0, 0, 0.65);
-
-    --pink: #EC008C;
-    --red: #ED1C24;
-    --orange: #F99D1C;
-    --blue: #008FD5;
-    --purple: #802A90;
-    --rainbow: linear-gradient(90deg,#EC008C, #ED1C24, #F99D1C, #008FD5, #802A90);
-}
+@import url('../../app.css');
 
 /* =============== FOOTER =============== */
 .footer {

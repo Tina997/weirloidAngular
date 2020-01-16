@@ -1,0 +1,113 @@
+@import url('app.css');
+
+/* =============== CAROUSEL =============== */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carouselImg {
+    max-height: 605px;
+}
+
+.caption {
+    margin-bottom: 5%;
+}
+
+.carouselButton {
+    background-color: var(--pink);
+    color: var(--white);
+    font-family: 'Monserrat', sans-serif;
+    font-size: 80%;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2% 3%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px 10px rgba(0, 0, 0, 0.50);
+    z-index: 2;
+}
+
+.carouselButton:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+/* =============== FEATURED PRODUTCS =============== */
+.section {
+    margin: 3% 0 3% 0;
+}
+
+.section h2{
+    margin: 5% 3% 3% 3%;
+    color: var(--pink);
+    font-family: 'Mogra', sans-serif;
+    text-transform: uppercase;
+}
+
+.productsBackground {
+    background-image: url('../assets/img/products_background.jpg');
+    display: flex;
+}
+
+.productList {
+    padding: 3%;
+}
+
+.productCard {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.productCard-price h4{
+    padding: 1% 5% 1% 4%;
+    position: absolute;
+    top: 5%; left: 0;
+    background-color: var(--pink);
+    z-index: 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--white);
+}
+
+.productCard-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.productCard-category {
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+.checked {
+    color: orange;
+}
+
+
+@media (min-width: 585px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 865px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1163px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
