@@ -12,13 +12,14 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component'
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ServicesComponent,
     AboutUsComponent,
     CheckoutComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
