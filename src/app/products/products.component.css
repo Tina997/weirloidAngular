@@ -1,0 +1,233 @@
+@import url('../app.css');
+
+/* =============== Filters =============== */
+
+.filters{
+    margin: 3% 0 3% 0;
+    height: fit-content;
+    background-color: #F5F1F1;
+    width: 100%;
+}
+
+.filters section{
+    margin-inline-start: 15px;
+    margin-inline-end: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid var(--white);
+    padding: 10px 10px 20px 30px;
+}
+
+.filters section p{
+    color: var(--pink);
+    font-size: 14px;
+}
+
+.filters #title{
+    background-color: var(--white);
+    width: 12em;
+    text-align: center;
+    margin-top: 1em;
+    color: var(--pink);
+    padding-top: 1%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.filters h4{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 100%;
+}
+
+.filters input[type=submit]{
+    border: none;
+    color: var(--pink);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Monserrat', sans-serif;
+    display: inline;
+}
+
+/* =============== Radio buttons =============== */
+.radio{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: var(--white);
+    border: 1px solid #DADADA;
+}
+
+.radio:hover input ~ .checkmark {
+    background-color: #DADADA;
+}
+
+.radio input:checked ~ .checkmark {
+    background-color: var(--pink);
+}
+
+/* =============== Slider =============== */
+#slider-range{
+    background-color: #747D88;
+    width: 80%;
+    height: 5px;
+    margin-inline-start: 8px;
+    margin-top: 30px;
+}
+
+#slider-range .ui-slider-handle{
+   background-color: var(--black) ;
+   border-radius: 3px;
+   width: 2px;
+   margin: 0%;
+}
+
+#slider-range .ui-slider-range {
+    background: var(--rainbow);
+    top: 0;
+    height: 100%;
+}
+
+#min, #max {
+    width: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* =============== Products section =============== */
+.catalog-products-section{
+    margin: 0.5% 0% 1.5% 0%;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.catalog-products-section #section-div{
+    margin-top: 2%;
+
+}
+
+@media (min-width: 485px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1070px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1500px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+/* =============== Products =============== */
+.section {
+    margin: 3% 0 3% 0;
+}
+
+.section h2{
+    margin: 5% 3% 3% 3%;
+    color: var(--pink);
+    font-family: 'Mogra', sans-serif;
+    text-transform: uppercase;
+}
+
+.productsBackground {
+    background-image: url('../../assets/img/products_background.jpg');
+    display: flex;
+}
+
+.productList {
+    padding: 3%;
+}
+
+.productCard {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+.productCard-price h4{
+    padding: 1% 5% 1% 4%;
+    position: absolute;
+    top: 5%; left: 0;
+    background-color: var(--pink);
+    z-index: 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: var(--white);
+}
+
+.productCard-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.productCard-category {
+    color: var(--pink);
+    font-weight: bolder;
+}
+
+.checked {
+    color: orange;
+}
+
+.myImg {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+@media (min-width: 585px) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 865px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1163px) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
