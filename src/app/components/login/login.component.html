@@ -1,0 +1,17 @@
+<form [formGroup]="logginForm" class="form">
+
+  <img class="logo-form" src="../../../assets/img/logo.png">
+  <br>
+  <div class="form-group">
+    <input type="email" formControlName="email" class="form-control input-myform" placeholder="name@example.com" required>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control input-myform" formControlName="password" placeholder="Contraseña" required>
+    <label class="error">{{errorMessage}}</label>
+    <label class="success">{{successMessage}}</label>
+  </div>
+  
+  
+  <br><br>
+  <button class="myform-button" type="submit" (click)="tryLoggin(logginForm.value)">Entrar</button>
+</form>

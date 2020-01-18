@@ -11,6 +11,8 @@ export const environment = {
     projectId: "weirloidangular",
     storageBucket: "weirloidangular.appspot.com",
     messagingSenderId: "878789249946",
+    appId: "1:878789249946:web:4c6a0776090c95de2b4823",
+    measurementId: "G-4H9M32MFEC"
   }
 };
 

@@ -1,0 +1,54 @@
+@import url('../../app.css');
+
+.form {
+  margin: 5.8% 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.form > .logo-form {
+  width: 15%;
+  margin-bottom: 7%;
+}
+
+.input-myform {
+  margin-top: 2%;
+  font-family: 'Monserrat', sans-serif;
+  border: 1.5px solid var(--pink);
+}
+
+.input-myform:focus {
+  border: 1.5px solid var(--pink);
+  box-shadow:0 0 0 .2rem rgba(236, 0, 140, 0.34);
+}
+
+.termsAndPolicies {
+  padding: 10% 0 1% 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60%;
+  color: gray;
+}
+
+.myform-button {
+  color: var(--white);
+  font-family: 'Monserrat', sans-serif;
+  font-style: normal;
+  font-size: 90%;
+  
+  text-transform: uppercase;
+  padding: 1.5% 6% ;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--pink);
+}
+
+.myform-button:hover {
+  background-image: var(--rainbow);
+}
+
+.termsAndPolicies {
+    padding: 5% 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60%;
+    color: gray;
+}

@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 
-import { FormsModule  } from "@angular/forms"; 
+import { FormsModule, ReactiveFormsModule  } from "@angular/forms"; 
+import { environment } from '../environments/environment';
 
-//Cosas de Firebase
+//Firebase
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -18,9 +22,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component'
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 import { ContactComponent } from './pages/contact/contact.component';
-
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -31,18 +36,24 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     ServicesComponent,
     AboutUsComponent,
-    CheckoutComponent,
     ContactComponent,
+    CheckoutComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, 
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AngularFireAuth, AngularFirestore],
   bootstrap: [AppComponent, ProductsComponent]
 })
 export class AppModule { }

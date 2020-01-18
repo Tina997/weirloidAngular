@@ -1,0 +1,17 @@
+<form [formGroup]="registerForm" class="form">
+
+  <img class="logo-form" src="../../../assets/img/logo.png">
+  <br>
+  <div class="form-group">
+    <input type="email" formControlName="email" class="form-control input-myform" placeholder="name@example.com" required>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control input-myform" formControlName="password" placeholder="Contraseña" required>
+    <label class="error">{{errorMessage}}</label>
+    <label class="success">{{successMessage}}</label>
+  </div>
+  <p class = "termsAndPolicies">Al crear una cuenta estás aceptando el <a href="#">Acepto los términos y condiciones de Weirloid.com</a> y <a href="#">Política de Privacidad</a></p>
+
+  <br>
+  <button class="myform-button" type="submit" (click)="tryRegister(registerForm.value)">Registrarse</button>
+</form>

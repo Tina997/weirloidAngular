@@ -30,10 +30,19 @@
         <div class="navbar-collapse collapse dual-nav order-3 order-md-3">
             <ul class="navbar-nav">
                 <li class="nav-item cel">
-                    <a class="nav-link header-nav" id="headerLink4" href="aboutUs">Sobre nosotros</a>
+                    <a class="nav-link header-nav" id="headerLink4" routerLink="aboutUs">Sobre nosotros</a>
                 </li>
                 <li class="nav-item cel">
-                    <a class="nav-link header-nav" id="headerLink5" href="contact">Contacto</a>
+                    <a class="nav-link header-nav" id="headerLink5" routerLink="contact">Contacto</a>
+                </li>
+                <li class="nav-item cel" *ngIf="userName == null">
+                    <a class="nav-link header-nav" id="headerLink6" routerLink="login">Entrar</a>
+                </li>
+                <li class="nav-item cel" *ngIf="userName == null">
+                    <a class="nav-link header-nav" id="headerLink7" routerLink="register">Registrarse</a>
+                </li>
+                <li class="nav-item cel" *ngIf="userName != null" style="position: absolute; margin-top:1% ;right: 4%">
+                    <a class="username" id="headerLink7" routerLink="" (click)="logout()">{{userName}}</a>
                 </li>
             </ul>
         </div>
