@@ -1,0 +1,11 @@
+.text {
+    font-family: 'Monserrat', sans-serif;
+    text-align: justify;
+    
+}
+
+.email {
+    font-family: 'Mogra', sans-serif;
+    text-align: center;
+    color: var(--pink);
+}
