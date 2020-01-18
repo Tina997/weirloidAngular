@@ -16,11 +16,11 @@ export class FirestoreService {
     return this.firestore.collection('cats').add(data);
   }
   //Obtiene un gato
-  public getCat(documentId: string) {
-    return this.firestore.collection('cats').doc(documentId).snapshotChanges();
+  public getProduct(documentId: string) {
+    return this.firestore.collection('products').doc(documentId).valueChanges();
   }
   //Obtiene todos los gatos
-  public getCats() {
+  public getProducts() {
     return this.firestore.collection('products').snapshotChanges();
   }
 }

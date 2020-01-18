@@ -16,7 +16,7 @@ import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFirestore } from '@angular/fire/firestore';
 
-import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component'
@@ -26,6 +26,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ContactComponent,
     CheckoutComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
