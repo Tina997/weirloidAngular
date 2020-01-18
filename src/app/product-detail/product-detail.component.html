@@ -1,1 +1,48 @@
-<p>product-detail works!</p>
+
+<!-- -Detail -->
+<section class="detail row">
+    <!-- Image-->
+    <div class="section col-md-3 offset-md-1">
+
+        <div class="media" *ngIf="product">
+        <!-- Product Card -->
+        <div class="card productCard">
+            
+            <img class="card-img-top productCard-image" [src]="product.url" alt="Card image">
+            <div class="productCard-price">
+                <h4 class="card-title"> {{product.precio}} €</h4>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 productCard-category">{{product.clase}}</h6>
+                <h5 class="card-title productCard-name">{{product.nombre}}</h5>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <!-- Data -->
+    <div class="section col-md-3">
+
+        <form action='addProduct' method='post'> 
+        <section class="data-section">
+            <article>
+                <h1>Descripción</h1>
+                <p>{{product.descripcion}}</p>
+            </article>
+            <article>
+                <h1>Cantidad</h1>
+                <input type='number' value='1' name='quantity' min='1' max='{{product.stock}}' class='quantity-input'>
+            </article>
+        </section>
+        
+        <button type="submit" class="button-submit">
+            Lista de deseos <i class="fas fa-heart"></i> 
+        </button>
+        <button type="submit" class="button-submit" name="addToCart">
+            Añadir al carrito <i class="fas fa-shopping-cart"></i> 
+        </button>
+        </form>
+    </div>
+</section>
+

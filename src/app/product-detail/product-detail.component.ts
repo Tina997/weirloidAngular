@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, Params } from '@angular/router';
+import { FirestoreService } from '../services/firestore/firestore.service';
+
+
+
+import { Observable, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { ProductsComponent } from '../pages/products/products.component';
+
 
 @Component({
   selector: 'app-product-detail',
@@ -7,9 +16,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+  product: any;
+  id : any;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private firestoreService: FirestoreService) { 
+
+    //Extraer id
+    this.route.params
+    .subscribe(params => {this.id = params['id']});
+
+    //Extraer objeto
+    this.firestoreService.getProduct(this.id).subscribe(product => {
+      //console.log(product); 
+      this.product = product;});
+
+    }
 
   ngOnInit() {
+    //console.log(this.product);
   }
+
 
 }

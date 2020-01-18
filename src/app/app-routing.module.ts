@@ -5,6 +5,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
     { path: 'aboutUs', component: AboutUsComponent },
     { path: 'checkout', component: CheckoutComponent },
 
-    { path: '', redirectTo: '/home', pathMatch: 'full' }
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+
+    { path: 'productDetail/:id', component: ProductDetailComponent}
 ];
 
 @NgModule({
