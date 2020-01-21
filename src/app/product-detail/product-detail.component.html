@@ -24,7 +24,7 @@
     <!-- Data -->
     <div class="section col-md-3">
 
-        <form action='addProduct' method='post'> 
+        <form [formGroup]='addToCartForm'> 
         <section class="data-section">
             <article>
                 <h1>Descripción</h1>
@@ -32,14 +32,12 @@
             </article>
             <article>
                 <h1>Cantidad</h1>
-                <input type='number' value='1' name='quantity' min='1' max='{{product.stock}}' class='quantity-input'>
+                <input type='number' [ngModel]='1' formControlName='quantity' min='1' max='{{product.stock}}' class='quantity-input'>
             </article>
         </section>
-        
-        <button type="submit" class="button-submit">
-            Lista de deseos <i class="fas fa-heart"></i> 
-        </button>
-        <button type="submit" class="button-submit" name="addToCart">
+        <input type='hidden' formControlName='itemId' [ngModel]="product.nombre">
+        <input type='hidden' formControlName='itemPrice' [ngModel]="product.precio">
+        <button type="submit" class="button-submit" name="addToCart" (click)="addToCart(addToCartForm.value)">
             Añadir al carrito <i class="fas fa-shopping-cart"></i> 
         </button>
         </form>

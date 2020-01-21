@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { FirestoreService } from '../services/firestore/firestore.service';
-
-
-
-import { Observable, of } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-import { ProductsComponent } from '../pages/products/products.component';
+import { FormGroup, FormControl} from '@angular/forms';
+import { ShoppingCartService } from '../services/shoppingCart/shopping-cart.service';
 
 
 @Component({
@@ -19,10 +15,16 @@ export class ProductDetailComponent implements OnInit {
   product: any;
   id : any;
 
+  addToCartForm = new FormGroup({
+    itemId : new FormControl(),
+    itemPrice : new FormControl(),
+    quantity : new FormControl()
+  });
+
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
-    private firestoreService: FirestoreService) { 
+    private firestoreService: FirestoreService,
+    private shoppingCartService: ShoppingCartService){ 
 
     //Extraer id
     this.route.params
@@ -37,6 +39,12 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit() {
     //console.log(this.product);
+  }
+
+  addToCart(value){
+    //console.log(value);
+    this.shoppingCartService.addToCart(value);
+    
   }
 
 

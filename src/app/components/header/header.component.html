@@ -44,8 +44,12 @@
                 <li class="nav-item cel" *ngIf="userName != null" style="position: absolute; margin-top:1% ;right: 4%">
                     <a class="username" id="headerLink7" routerLink="" (click)="logout()">{{userName}}</a>
                 </li>
+                <li class='nav-item cel' *ngIf='itemCount != 0'><a id='count' class="nav-link header-nav" routerLink="shoppingCart">
+                    <i class='fas fa-shopping-cart'></i> {{itemCount}} ITEMS
+                </a></li>
             </ul>
         </div>
+
     
     </nav>
 

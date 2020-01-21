@@ -11,10 +11,7 @@ export class FirestoreService {
     constructor(
     private firestore: AngularFirestore
   ) {}
-  //Crea un nuevo gato
-  public createCat(data: {nombre: string, url: string}) {
-    return this.firestore.collection('cats').add(data);
-  }
+  
   //Obtiene un gato
   public getProduct(documentId: string) {
     return this.firestore.collection('products').doc(documentId).valueChanges();

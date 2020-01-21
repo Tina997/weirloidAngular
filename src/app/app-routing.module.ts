@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'checkout', component: CheckoutComponent , canActivate: [AuthGuard] },
   { path: 'productDetail/:id', component: ProductDetailComponent},
+  { path: 'shoppingCart', component: ShoppingCartComponent},
 
   
   { path: '', redirectTo: '/home', pathMatch: 'full' },
