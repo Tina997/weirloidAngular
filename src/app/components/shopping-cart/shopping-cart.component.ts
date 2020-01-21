@@ -51,6 +51,7 @@ export class ShoppingCartComponent implements OnInit, AfterViewChecked  {
     onAuthorize: (data, actions) => {
       return actions.payment.execute().then((payment) => {
         //Do something when payment is successful.
+        localStorage.removeItem('cartProducts');
       })
     }
   };
