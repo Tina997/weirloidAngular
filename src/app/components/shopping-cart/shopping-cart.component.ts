@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { ShoppingCartService } from '../../services/shoppingCart/shopping-cart.service';
 import { AuthService } from '../../services/auth/auth.service';
+import { viewClassName } from '@angular/compiler';
 
 //Paypal
 declare let paypal: any;
@@ -52,6 +53,8 @@ export class ShoppingCartComponent implements OnInit, AfterViewChecked  {
       return actions.payment.execute().then((payment) => {
         //Do something when payment is successful.
         localStorage.removeItem('cartProducts');
+        console.log(localStorage);
+        window.location.reload();
       })
     }
   };
