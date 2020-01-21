@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FirestoreService } from '../services/firestore/firestore.service';
+import { FirestoreService } from '../../services/firestore/firestore.service';
 import { FormGroup, FormControl} from '@angular/forms';
-import { ShoppingCartService } from '../services/shoppingCart/shopping-cart.service';
+import { ShoppingCartService } from '../../services/shoppingCart/shopping-cart.service';
 
 
 @Component({

@@ -1,0 +1,39 @@
+<section class="shoppingCart">
+
+    <h1>MI CARRITO</h1>
+    <table>
+    <tr id="column-name">
+        <th>Artículo</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+    </tr>
+    <tr *ngFor='let item of items' id='itemList'>
+        <td>{{item.name}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price}} €</td>
+    </tr>
+    <tr>
+        <td></td>
+        <th id='column-name'>Total</th>
+        <td id='column-name'></td>
+    </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <div *ngIf='totalCompra'><td>{{totalCompra}} €</td></div>
+        
+    </tr>
+
+    </table>
+
+    <div *ngIf="userName != null">
+        <div class="paypal-button" id="paypal-checkout-button"></div>
+    </div>
+    <div *ngIf="userName == null"><a href='login'><button class='button-pay'><label>INICIA SESIÓN O REGÍSTRATE</label></button></a></div>
+
+
+
+
+    
+</section>
+

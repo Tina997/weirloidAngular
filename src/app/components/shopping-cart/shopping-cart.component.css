@@ -1,4 +1,4 @@
-@import "../app.css";
+@import url('../../app.css');
 
 /* =============== TABLE =============== */
 
@@ -16,7 +16,7 @@
     width: fit-content;
     padding: 1%;
     position: relative;
-    margin-left: 35%;
+    margin-left: 40%;
     font-size: 28px;
 }
 
@@ -57,4 +57,9 @@
     margin-left: 40%;
     margin-bottom: 3%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.paypal-button{
+    text-align: center;
+    margin-bottom: 3%;
 }

@@ -26,8 +26,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [

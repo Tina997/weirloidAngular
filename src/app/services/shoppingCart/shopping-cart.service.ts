@@ -20,6 +20,7 @@ export class ShoppingCartService {
       cart.push(JSON.stringify(value));
       localStorage.setItem('cartProducts', JSON.stringify(cart)); 
     }
+    location.reload();
   }
 
   getCartItems(){
