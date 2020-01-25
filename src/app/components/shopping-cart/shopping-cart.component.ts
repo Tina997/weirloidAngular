@@ -54,7 +54,7 @@ export class ShoppingCartComponent implements OnInit, AfterViewChecked  {
         //Do something when payment is successful.
         localStorage.removeItem('cartProducts');
         console.log(localStorage);
-        window.location.reload();
+        window.location.href="";
       })
     }
   };
